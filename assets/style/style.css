@@ -1,0 +1,460 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,900&family=Quicksand:wght@300;500;700&display=swap');
+
+body {
+    font-family:'Lato', sans-serif;
+    font-family:'Quicksand', sans-serif;
+    background-color: whitesmoke;
+}  
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main_contact {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+}
+
+.nav_bar {
+    background-color: whitesmoke;
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.menu_position {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 22px;
+    gap: 55px;
+    font-weight: bold;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.active {
+    color: #e32879;
+} 
+
+a:hover{
+    transform: scale(1.2);
+} 
+
+.logo {
+    width: 150px;
+    height: 100%;
+} 
+
+.title {
+    width: 100%;
+    font-size: 30px;
+    text-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 16vh;
+    color: white;
+    background-image: linear-gradient(60deg, #AA076B 10%, #61045F 80%);
+    box-shadow: 0 8px 32px 0 rgba(62, 62, 62, 0.3);
+} 
+
+.btn-input{
+    height: 2.5em;
+    width: 23em;
+    border-radius: 4px 4px 4px 4px;
+}
+
+.checkbox_search {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 8vh;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 20px;
+    gap: 30px;
+}
+
+.btn {
+    background-color: #e32879;
+    border: none;
+    color: white;
+    padding: 7px 7px 7px 7px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    transform: scale(1.2);
+}
+
+.form-control{
+    height: 2.7em;
+    width: 23em;
+    border-radius: 4px 4px 4px 4px;
+    gap: 5px;
+}
+
+.cards {
+    padding: 30px 30px 30px 30px;
+    width: 80%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 70px;
+} 
+
+.card {
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1)
+        rgba(255, 255, 255, 0.1)
+    );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+} 
+
+.card_img {
+    height: 150px;
+    width: 270px;
+    object-fit: cover;
+    box-shadow: black 0.1em 0.1em 0.3em;
+    border-radius: 10px;
+} 
+
+.card_bottom {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    gap: 30px;
+} 
+
+.title_card {
+    font-size: 25px;
+}
+
+.subtitle_card {
+    padding: 0 10px 0 10px;
+    font-size: 15px;
+}
+
+.price {
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.form {
+    width: 80%;
+    height: auto;
+    padding: 50px 0 50px 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: black;
+    font-size: 20px;
+    gap: 35px;
+}
+
+.form-control1 {
+    height: 2.5em;
+    width: 23em;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1)
+        rgba(255, 255, 255, 0.1)
+    );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-control2 {
+    height: 2.5em;
+    width: 23em;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1)
+        rgba(255, 255, 255, 0.1)
+    );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.form-control3 {
+    height: 10em;
+    width: 23em;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1)
+        rgba(255, 255, 255, 0.1)
+    );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.name_form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.email_form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.table {
+    color: black;
+    width: 80%;
+    height: auto;
+    padding: 99px 0 99px 0;
+}
+
+td {
+    border: #e32879 1px solid;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 20px;
+}
+
+th {
+    border: #e32879 2px solid;
+    padding: 5px;
+    font-size: 20px;
+    color: white;
+    background-color:#222222;
+    border-radius: 20px;
+}
+
+.msg_form {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.fb {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    padding: 6px 6px 6px 6px;
+    border-radius: 40%;
+}
+
+.insta {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    padding: 6px 6px 6px 6px;
+    border-radius: 40%;
+}
+
+.wpp {
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    padding: 6px 6px 6px 6px;
+    border-radius: 40%;
+}
+
+footer {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row;
+    justify-content: space-around;
+    background-image: linear-gradient(60deg, #AA076B 10%, #61045F 80%);
+    box-shadow: black 0.1em 0.1em 0.3em;
+    color: white;
+    
+}
+
+@media screen and (max-width:920px) {
+    header{
+        height: fit-content;
+    }
+    .nav_bar{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        gap: 15px;
+        height: fit-content;
+    }
+    a{
+        width: 100%;
+    }
+    .checkbox_search{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .d-flex{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 10px 10px 10px;
+    }  
+
+    .cards{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 90px 50px 50px 50px;
+    }
+
+    footer{
+        gap: 20px;
+        padding: 20px;
+        height: fit-content;
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header{
+        height: fit-content;
+    }
+
+    .nav_bar .menu_position{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        gap: 15px;
+        height: fit-content;
+    }
+    .checkbox_search{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .d-flex{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 10px 10px 10px;
+    }  
+    
+    .cards{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 90px 50px 50px 50px;
+    }
+
+    footer{
+        gap: 20px;
+        padding: 20px;
+        height: fit-content;
+        flex-direction: column;
+    }
+}  
+
+@media only screen and (max-width:400px) {
+    header{
+        height: fit-content;
+    }
+
+    .nav_bar .menu_position{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        width: 100%;
+        gap: 15px;
+        height: fit-content;
+    }
+
+    .checkbox_search{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .d-flex{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 10px 10px 10px 10px;
+    }  
+    
+    .cards{
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding: 120px 50px 50px 50px;
+    }
+
+    footer{
+        gap: 20px;
+        padding: 20px;
+        height: fit-content;
+        flex-direction: column;
+    }
+}
