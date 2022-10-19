@@ -47,7 +47,7 @@ main {
     font-weight: bold;
 }
 
-a {
+.a {
     color: black;
     text-decoration: none;
 }
@@ -56,7 +56,7 @@ a {
     color: #e32879;
 } 
 
-a:hover{
+.a:hover{
     transform: scale(1.2);
 } 
 
@@ -78,7 +78,7 @@ a:hover{
     box-shadow: 0 8px 32px 0 rgba(62, 62, 62, 0.3);
 } 
 
-.btn-input{
+.btn-input {
     height: 2.5em;
     width: 23em;
     border-radius: 4px 4px 4px 4px;
@@ -155,6 +155,31 @@ a:hover{
     );
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
     border: 1px solid rgba(255, 255, 255, 0.1);
+} 
+
+.card_details{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1)
+        rgba(255, 255, 255, 0.1)
+    );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 30px 30px 30px 30px;
+} 
+
+.padding_detail{
+    padding: 7px 10px 30px 10px;
 } 
 
 .card_img {
@@ -324,7 +349,7 @@ footer {
     background-image: linear-gradient(60deg, #AA076B 10%, #61045F 80%);
     box-shadow: black 0.1em 0.1em 0.3em;
     color: white;
-    
+    bottom: 0;
 }
 
 @media screen and (max-width:920px) {
@@ -340,7 +365,7 @@ footer {
         gap: 15px;
         height: fit-content;
     }
-    a{
+    .a{
         width: 100%;
     }
     .checkbox_search{
