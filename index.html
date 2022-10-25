@@ -6,47 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/img/LogoAmazingEvents.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/style/style.css">
-    <title>Amazing Events - Home</title>
+    <title id="title">Amazing Events - Home</title>
 </head>
 <body>
     <header>
         <nav class="nav_bar">
-        <div class="logo_position">
-            <img src="./assets/img/LogoAmazingEvents.png" alt="logoamazing" class="logo">
-        </div>
-        <div class="menu_position">
-            <a href="#" class="active">Home</a>
-            <a href="./upcomingevents.html">Upcoming Events</a>
-            <a href="./pastevents.html">Past Events</a>
-            <a href="./contact.html">Contact</a>
-            <a href="./stats.html">Stats</a>
-        </div>
-    </nav>
+            <div class="logo_position">
+                <img src="./assets/img/LogoAmazingEvents.png" alt="logoamazing" class="logo">
+            </div>
+            <div class="menu_position">
+                <a href="#" class="a">Home</a>
+                <a href="./upcomingevents.html" class="a">Upcoming Events</a>
+                <a href="./pastevents.html" class="a">Past Events</a>
+                <a href="contact.html" class="a">Contact</a>
+                <a href="./stats.html" class="a">Stats</a>
+            </div>
+        </nav>
     </header>
-
-    <div class="title">
-            <h1>HOME</h1>
-    </div>
-
     <main>
+        <section class="home_events">
+            <div class="title_home">
+                <h1>Creating  <span class="title_rose">experiences.</span></h1>
+            </div>
+            <div>
+                <img class="image_home" src="./assets/img/img.home.jpg" alt="events">
+            </div>
+        </section>
         <div class="checkbox_search">
-            <div class="checkbox">
-                <label for="category" ><input type="checkbox" name="concerts" id="opcion1"> Concerts</label>
-                <label for="category"><input type="checkbox" name="museums" id="opcion2"> Museums</label>
-                <label for="category"><input type="checkbox" name="cinemas" id="opcion3"> Cinemas</label>
-                <label for="category"><input type="checkbox" name="fairs" id="opcion4"> Fairs</label>
-                <label for="category"><input type="checkbox" name="parties" id="opcion5"> Parties</label>
-                <label for="category"><input type="checkbox" name="books" id="opcion5"> Books</label>
+            <div class="checkbox" id="containerCheckbox">
             </div>
             <div>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2 btn-input" type="search" placeholder="Search" aria-label="Search">
+                    <input id="search" class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
             </div>
         </div>
         <div class="cards" id="cards_main">
-            
         </div>
     </main>
     <footer>
@@ -63,7 +59,6 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
-    <script src="./assets/js/data.js"></script>
-    <script src="./assets/js/index.js"></script>
+    <script src="../assets/js/main.js"></script>
 </body>
 </html>

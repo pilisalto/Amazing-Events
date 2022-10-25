@@ -17,6 +17,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    min-height: 70vh;
+    min-width: 50vh;
 }
 
 .main_contact {
@@ -28,7 +30,7 @@ main {
 }
 
 .nav_bar {
-    background-color: whitesmoke;
+    background-color: white;
     width: 100%;
     height: 7vh;
     display: flex;
@@ -42,12 +44,12 @@ main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 22px;
+    font-size: 19px;
     gap: 55px;
     font-weight: bold;
 }
 
-a {
+.a {
     color: black;
     text-decoration: none;
 }
@@ -56,8 +58,8 @@ a {
     color: #e32879;
 } 
 
-a:hover{
-    transform: scale(1.2);
+.a:hover{
+    color: #e32879;
 } 
 
 .logo {
@@ -78,7 +80,32 @@ a:hover{
     box-shadow: 0 8px 32px 0 rgba(62, 62, 62, 0.3);
 } 
 
-.btn-input{
+.home_events{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 200px;
+    padding: 50px 50px 16px 50px;
+    width: 80%;
+    height: auto;
+}
+
+.title_home{
+    font-size: 40px;
+}
+
+.title_rose{
+    color: #e32879;
+}
+
+.image_home{
+    height: 300px;
+    width: auto;
+    border-radius: 10px;
+}
+
+.btn-input {
     height: 2.5em;
     width: 23em;
     border-radius: 4px 4px 4px 4px;
@@ -126,22 +153,22 @@ a:hover{
 }
 
 .cards {
-    padding: 30px 30px 30px 30px;
-    width: 80%;
+    padding: 75px 20px 75px 20px;
+    width: 95%;
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    gap: 70px;
+    gap: 50px;
 } 
 
 .card {
-    width: 300px;
+    width: 270px;
     height: 400px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
     flex-direction: column;
     align-content: center;
@@ -153,13 +180,38 @@ a:hover{
         rgba(255, 255, 255, 0.1)
         rgba(255, 255, 255, 0.1)
     );
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.36);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.20);
     border: 1px solid rgba(255, 255, 255, 0.1);
+} 
+
+.card_details{
+    width: 300px;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-content: center;
+    color: black;
+    text-align: center;
+    border-radius: 20px;
+    background: linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.1)
+        rgba(255, 255, 255, 0.1)
+    );
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.20);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 10px 10px 10px;
+} 
+
+.padding_detail{
+    padding: 5px 10px 30px 10px;
 } 
 
 .card_img {
     height: 150px;
-    width: 270px;
+    width: 240px;
     object-fit: cover;
     box-shadow: black 0.1em 0.1em 0.3em;
     border-radius: 10px;
@@ -174,7 +226,7 @@ a:hover{
 } 
 
 .title_card {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .subtitle_card {
@@ -183,21 +235,20 @@ a:hover{
 }
 
 .price {
-    font-size: 19px;
+    font-size: 20px;
     font-weight: bold;
 }
 
 .form {
     width: 80%;
     height: auto;
-    padding: 50px 0 50px 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     text-align: center;
     color: black;
     font-size: 20px;
-    gap: 35px;
+    gap: 20px;
 }
 
 .form-control1 {
@@ -280,6 +331,10 @@ th {
     border-radius: 20px;
 }
 
+.td_bold{
+    font-weight: bold;
+}
+
 .msg_form {
     display: flex;
     align-items: center;
@@ -321,10 +376,11 @@ footer {
     text-align: center;
     flex-direction: row;
     justify-content: space-around;
-    background-image: linear-gradient(60deg, #AA076B 10%, #61045F 80%);
+    background-color: white;
     box-shadow: black 0.1em 0.1em 0.3em;
-    color: white;
-    
+    color: black;
+    bottom: 0;
+    min-height: 7vh;
 }
 
 @media screen and (max-width:920px) {
@@ -340,7 +396,7 @@ footer {
         gap: 15px;
         height: fit-content;
     }
-    a{
+    .a{
         width: 100%;
     }
     .checkbox_search{
@@ -375,6 +431,17 @@ footer {
 @media screen and (max-width:600px) {
     header{
         height: fit-content;
+    }
+
+    .home_events{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+        padding: 50px 50px 16px 50px;
+        width: 80%;
+        height: auto;
     }
 
     .nav_bar .menu_position{
@@ -420,6 +487,17 @@ footer {
         height: fit-content;
     }
 
+    .home_events{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 100px;
+        padding: 50px 50px 16px 50px;
+        width: 80%;
+        height: auto;
+    }
+
     .nav_bar .menu_position{
         flex-direction: column;
         align-items: center;
@@ -430,12 +508,15 @@ footer {
         height: fit-content;
     }
 
-    .checkbox_search{
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 20px;
-        padding: 10px 10px 10px 10px;
-    }
+.checkbox_search {
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    width: 100%;
+    height: 8vh;
+}
 
     .d-flex{
         width: 100%;
